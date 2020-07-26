@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaptionBot</title>
+    <link rel="stylesheet" href="../static/style.css">
+   
+</head>
+<body>
+    <div id="div1">
+        <p>CaptionBot</p>
+    </div>
+     <div id="div3">
+            <blockquote class="text">
+            <p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp Hello I am Drishti!<br>
+            Currently I am trained on limited images if I don't produce relevant caption please pardon me.</p>
+    </blockquote>
+    </div>
+    
+    <div class="main">
+	    <form id="main1" method="POST" action="/"enctype="multipart/form-data">
+            <input  type="file" name="userfile"  placeholder="Upload a photo">
+             <br>
+		    <input  type ="Submit" >
+	    </form>
+	    {% if image_caption %}
+		    <img src="{{path}}" alt="Flowers in Chania" >
+		    <br>
+		    <h1 >Generated caption:{{image_caption}}</h1>
+        {% endif %}
+    </div>
+
+</body>
+</html>
