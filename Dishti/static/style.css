@@ -25,10 +25,10 @@
    padding-top: 10px;
 }
 .main{
-    height:auto;
+    /*height:auto;*/
     background-color:rgb(31, 143, 133) ;
 }
-#main1{
+/*#main1{
     margin-left: 40%;
     align-content: center;
-}
+}*/

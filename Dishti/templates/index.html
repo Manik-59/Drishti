@@ -18,13 +18,14 @@
     </blockquote>
     </div>
     
-    <div class="main">
-	    <form id="main1" method="POST" action="/"enctype="multipart/form-data">
-            <input  type="file" name="userfile"  placeholder="Upload a photo">
-             <br>
-		    <input  type ="Submit" >
+    <div class="main" style="text-align: center;">
+        
+        <form id="main1" method="POST" action="/" enctype="multipart/form-data">
+            <h1><input type="file" name="userfile" placeholder="Upload a photo"></h1>
+            <h1><input  type ="Submit" ></h1>
 	    </form>
-	    {% if image_caption %}
+
+        {% if image_caption %}
 		    <img src="{{path}}" alt="Flowers in Chania" >
 		    <br>
 		    <h1 >Generated caption:{{image_caption}}</h1>
