@@ -2,15 +2,6 @@
 # coding: utf-8
 
 # In[11]:
-
-
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import sklearn as sk
-import re 
-import cv2
-import json
 import collections
 import tensorflow as tf
 import keras
